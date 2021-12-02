@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "6544a902-e72b-47ad-a223-76df9038dad1",
+		"name": "microservice-type-credit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listar todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Typecredits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Typecredits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear nuevo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"name\": \"carlos\",\r\n        \"currentbalance\": \"500.00\",\r\n        \"creditgranted\": \"500.00\" \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Typecredits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Typecredits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Typecredits/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Typecredits",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrar por ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Typecredits/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Typecredits",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar por ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"1\",\r\n        \"name\": \"robert\",\r\n        \"currentbalance\": \"600.00\",\r\n        \"creditgranted\": \"400.00\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/Typecredits/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Typecredits",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
